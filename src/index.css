@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.weather-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form styling */
+.weather-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.weather-form input {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.weather-form button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.3);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
+}
+
+.weather-form button:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* Error */
+.error {
+  background: rgba(255,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Weather card */
+.weather-card {
+  text-align: center;
+}
+
+.location {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.region {
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.temperature {
+  font-size: 6rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.feels {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.condition {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Extra info grid */
+.extra-info {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* Default backgrounds */
+.default-bg {
+  background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.default-day {
+  background: linear-gradient(180deg, #87cefa 0%, #00bfff 100%);
+}
+
+.default-night {
+  background: linear-gradient(180deg, #141e30 0%, #243b55 100%);
+}
+
+.sunny-bg {
+  background: linear-gradient(180deg, #56ccf2 0%, #2f80ed 100%);
+}
+
+.night-bg {
+  background: linear-gradient(180deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.cloudy-bg {
+  background: linear-gradient(180deg, #757f9a 0%, #d7dde8 100%);
+}
+
+.rainy-bg {
+  background: linear-gradient(180deg, #373b44 0%, #4286f4 100%);
+}
+
+.snowy-bg {
+  background: linear-gradient(180deg, #e6dada 0%, #274046 100%);
+}
+
+.weather-container {
+  transition: background 1s ease-in-out;
+}
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 1rem 0;
+}
