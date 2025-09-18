@@ -13,7 +13,7 @@ const WeatherApp = () => {
 
     useEffect(() => {
         setTimeout(()=> {
-            fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`)
+            fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`)
             .then(res => {
                 if(!res.ok){
                     throw Error("Could not fetch the data from the source")
